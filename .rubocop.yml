@@ -1,0 +1,13 @@
+require: rubocop-rspec
+
+inherit_from:
+  - https://raw.githubusercontent.com/psu-stewardship/guides/master/style/ruby/.rubocop.yml
+  - .rubocop_todo.yml
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
